@@ -1,1 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Staatliches:100,200,300,400,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Albert+Sans:100,200,300,400,500,600,700,800,900);
+
+:root {
+  --primary-color: #666666;
+  --bg-color: #000;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box !important;
+  scroll-behavior: smooth !important;
+  letter-spacing: 0.04em;
+  /* border: 1px solid red !important; */
+}
+
+html,
+body {
+  color: var(--primary-color);
+  font-family: "Albert Sans", sans-serif;
+}
