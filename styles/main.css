@@ -2,8 +2,26 @@
 @import url(https://fonts.googleapis.com/css?family=Staatliches:100,200,300,400,500,600,700,800,900);
 @import url(https://fonts.googleapis.com/css?family=Albert+Sans:100,200,300,400,500,600,700,800,900);
 
+@font-face {
+  font-family: "Open Sauce";
+  src: url("/fonts/opensauce-medium.woff2") format("woff2"),
+    url("/fonts/opensauce-medium.woff2") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sauce";
+  src: url("../fonts/opensauce-regular.woff2") format("woff2"),
+    url("../fonts/opensauce-regular.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   --primary-color: #666666;
+  --secondary-color: #eee;
   --bg-color: #000;
 }
 
@@ -13,11 +31,16 @@
   box-sizing: border-box !important;
   scroll-behavior: smooth !important;
   letter-spacing: 0.04em;
+  font-display: swap;
   /* border: 1px solid red !important; */
+}
+
+html {
+  font-size: 0.65vw;
 }
 
 html,
 body {
   color: var(--primary-color);
-  font-family: "Albert Sans", sans-serif;
+  font-family: "Open Sauce", "Albert Sans", "Poppins", sans-serif;
 }

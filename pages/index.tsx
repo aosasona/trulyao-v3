@@ -1,5 +1,5 @@
-import Dummy from "@/components/Dummy";
-import Meta from "@/defaults/Meta";
+import Dummy from "@components/Dummy";
+import Meta from "@defaults/Meta";
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {

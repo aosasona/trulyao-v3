@@ -1,7 +1,7 @@
 import type { FC, ReactNode } from "react";
-import Meta from "@/defaults/Meta";
-import Nav from "@/components/Nav";
-import { firstLetterUpperCase } from "utils/capital.util";
+import Meta from "@defaults/Meta";
+import Nav from "@components/Nav";
+import { firstLetterUpperCase } from "@utils/capital.util";
 
 interface Props {
   title: string;
