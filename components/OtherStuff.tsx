@@ -7,7 +7,10 @@ const OtherStuff = () => {
     <section className="mt-12" id="other-stuff">
       <div>
         <SectionHeader title="Other Stuff" />
-        <p className="text-faded leading-relaxed text-sm"></p>{" "}
+        <p className="text-faded leading-relaxed text-sm">
+          These are the personal projects/products that I have worked on or
+          other ones I have contributed to.
+        </p>{" "}
       </div>
     </section>
   );

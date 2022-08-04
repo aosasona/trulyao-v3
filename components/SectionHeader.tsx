@@ -7,7 +7,7 @@ interface Props {
 const SectionHeader: FC<Props> = ({ title }) => {
   return (
     <div>
-      <h1 className="header-text text-3xl lg:text-5xl">{title}</h1>
+      <h1 className="header-text text-4xl lg:text-5xl">{title}</h1>
       <div className="header-line" />
     </div>
   );

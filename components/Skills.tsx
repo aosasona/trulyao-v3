@@ -29,8 +29,6 @@ const Skills = () => {
             level={8}
           />
           <SkillsRating name="MySQL + PostgreSQL" level={8} />
-          <SkillsRating name="MongoDB & Redis" level={7} />
-          <SkillsRating name="Docker + Linux" level={6} />
           <SkillsRating name="Git & Github" level={7} />
         </div>
 
