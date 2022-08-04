@@ -75,7 +75,7 @@ const NavMenu: FC<Props> = ({ isVisible, toggleVisibility }) => {
             <NavLink url="/#other-stuff" variants={itemVariant}>
               Other Stuff
             </NavLink>
-            <NavLink url="/#blog" variants={itemVariant}>
+            <NavLink url="/blog" variants={itemVariant}>
               Blog
             </NavLink>
           </motion.div>

@@ -17,7 +17,7 @@ const Nav: FC<Props> = ({ title = "Home" }) => {
 
   return (
     <>
-      <nav className="flex fixed top-5 right-0 left-0 w-[95vw] lg:w-5/6 justify-between items-center mx-auto bg-neutral-800 bg-opacity-40 backdrop-blur-md drop-shadow-md-lg rounded-md py-4 lg:py-6 px-8 lg:px-10">
+      <nav className="flex fixed top-5 right-0 left-0 w-[95vw] lg:w-5/6 justify-between items-center mx-auto bg-neutral-800 bg-opacity-80 backdrop-blur-md drop-shadow-md-lg rounded-md py-5 lg:py-6 px-8 lg:px-10">
         <div>
           <h1 className="font-extrabold text-md lg:text-2xl">{title}</h1>
         </div>
@@ -63,7 +63,7 @@ const Nav: FC<Props> = ({ title = "Home" }) => {
             onClick={handleMenuClick}
             className={`${isMenuOpen ? "rotate-[90deg]" : ""}`}
           >
-            <BiMenuAltRight size={22} />
+            <BiMenuAltRight size={24} />
           </button>
         </div>
       </nav>

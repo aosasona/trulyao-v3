@@ -23,6 +23,7 @@
   --highlight-color: #fff;
   --primary-color: #777;
   --secondary-color: rgb(255, 240, 210);
+  --faded-color: #525252;
   --bg-color: #171717;
 }
 
@@ -73,6 +74,70 @@ body {
   padding: 0.7rem 1rem;
   transition: all 0.1s ease-in-out;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+.hero-cta {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 1.25rem 1.75rem;
+  user-select: none;
+  transition: all 0.2s ease-in-out;
+}
+.hero-cta-line {
+  display: inline-block;
+  width: 2rem;
+  height: 2px;
+  background-color: var(--primary-color);
+  margin: 0 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.hero-cta:hover {
+  color: var(--highlight-color);
+  border: none;
+  padding: 1.25rem 0rem;
+}
+.hero-cta:hover .hero-cta-line {
+  width: 75%;
+  background-color: var(--highlight-color);
+}
+.hero-image {
+  width: 90%;
+}
+.hero-image img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1 / 1;
+  margin-inline: auto;
+  filter: brightness(0.6);
+  transition: all 0.2s ease-in-out;
+}
+.hero-image:hover img {
+  filter: brightness(1);
+}
+.hero-image::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  z-index: -1;
+}
+.hero-image::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  z-index: -1;
+}
+.hero-quote {
+  font-size: 0.8rem;
+  border-top: 3px solid var(--primary-color);
 }
 .nav-link-container {
   display: flex;
