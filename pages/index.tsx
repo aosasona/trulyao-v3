@@ -31,54 +31,25 @@ const Home: NextPage = () => {
     <Layout title="Ayodeji" description="Software Developer">
       <main
         className="mt-[13vh] lg:mt-0 w-[95vw] lg:w-5/6 mx-auto px-3 max-w-[100vw]"
-        data-scroll-section
         ref={scrollRef}
       >
-        <div
-          data-scroll
-          data-scroll-speed="5"
-          data-scroll-position="top"
-          data-scroll-direction="horizontal"
-        >
+        <div data-scroll data-scroll-speed="5">
           <Hero />
         </div>
 
-        <div
-          data-scroll
-          data-scroll-speed="3"
-          data-scroll-position="top"
-          data-scroll-direction="vertical"
-          data-scroll-delay="1"
-          data-scroll-offset="15%,5%"
-        >
+        <div data-scroll data-scroll-speed="3">
           <About />
         </div>
 
-        <div
-          data-scroll
-          data-scroll-speed="1"
-          data-scroll-position="bottom"
-          data-scroll-direction="horizontal"
-        >
+        <div data-scroll data-scroll-speed="1">
           <Skills />
         </div>
 
-        <div
-          data-scroll
-          data-scroll-speed="8"
-          data-scroll-position="bottom"
-          data-scroll-direction="vertical"
-        >
+        <div data-scroll data-scroll-speed="6">
           <OtherStuff />
         </div>
 
-        <div
-          data-scroll
-          data-scroll-speed="4"
-          data-scroll-position="bottom"
-          data-scroll-direction="vertical"
-          className="lg:py-[10vh]"
-        >
+        <div className="lg:py-12">
           <Footer />
         </div>
       </main>
