@@ -61,7 +61,7 @@ const NavMenu: FC<Props> = ({ isVisible, toggleVisibility }) => {
             initial="closed"
             animate="open"
             exit="closed"
-            className="h-[70vh] flex flex-col gap-y-6 overflow-y-auto mt-6"
+            className="max-h-[50vh] flex flex-col gap-y-6 overflow-y-auto mt-6"
           >
             <NavLink url="/" variants={itemVariant}>
               Home
@@ -87,7 +87,7 @@ const NavMenu: FC<Props> = ({ isVisible, toggleVisibility }) => {
             transition={{ duration: 0.3, ease: "easeInOut", delay: 0.4 }}
             className="w-full flex flex-col justify-center gap-y-4"
           >
-            <div className="flex justify-evenly items-center py-4 mt-auto">
+            <div className="flex justify-evenly items-center py-4 mt-[10vh]">
               <NavMenuIcon
                 url="https://twitter.com/trulyao"
                 icon={<FaTwitter size={23} />}
