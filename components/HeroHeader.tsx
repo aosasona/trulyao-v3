@@ -6,11 +6,11 @@ interface Props {
 
 const HeroHeader: FC<Props> = ({ children }) => {
   return (
-    <div className="select-none">
+    <div className="select-none staatliches">
       {[...children].map((word, index) => (
         <span
           key={index}
-          className="text-[14vw] lg:text-[6.75vw] font-bold hover:text-white transition-all"
+          className="text-[17vw] lg:text-[6.75vw] font-bold hover:text-faded transition-all"
         >
           {word}
         </span>

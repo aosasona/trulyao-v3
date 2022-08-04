@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="lg:h-screen lg:flex lg:items-center lg:justify-center">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-8">
         <div className="flex flex-col gap-y-4 lg:gap-y-6">
-          <div className="w-full px-1 max-w-full">
+          <div className="w-full px-1 max-w-full flex flex-col space-y-[-10px]">
             <HeroHeader>Software</HeroHeader>
             <HeroHeader>Developer</HeroHeader>
           </div>

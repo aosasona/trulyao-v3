@@ -17,17 +17,17 @@ const SkillsRating: FC<Props> = ({ name, level, learning = false }) => {
       onDoubleClick={() => setShowSkills(!showSkills)}
     >
       <div className="h-auto flex justify-between items-center">
-        <p className="text-sm">{name}</p>
+        <p className="text-sm text-primary">{name}</p>
         {learning && (
-          <p className="w-max bg-neutral-800 text-neutral-500 text-[11px] font-normal px-3 py-1">
+          <p className="w-max bg-neutral-800 text-neutral-500 text-[10px] font-normal px-3 py-1">
             GETTING STARTED
           </p>
         )}
       </div>
       {showSkills && (
-        <div className="relative w-full h-[4px] bg-neutral-700 mt-5">
+        <div className="relative w-full h-[4px] bg-neutral-800 mt-5">
           <div
-            className="h-full bg-neutral-400 absolute left-0 top-0 bottom-0"
+            className="h-full bg-faded absolute left-0 top-0 bottom-0"
             style={{ width: `${skillsPercent}%` }}
           />
         </div>

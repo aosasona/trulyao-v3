@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { useRef, useEffect } from "react";
 import About from "@components/About";
 import Hero from "@components/Hero";
 import OtherStuff from "@components/OtherStuff";
@@ -6,6 +7,9 @@ import SectionHeader from "@components/SectionHeader";
 import Skills from "@components/Skills";
 import Layout from "@defaults/Layout";
 import type { NextPage } from "next";
+
+const locomotiveScroll =
+  typeof window !== `undefined` ? require("locomotive-scroll").default : null;
 
 const Home: NextPage = () => {
   return (

@@ -20,11 +20,11 @@
   font-display: swap;
 }
 :root {
-  --highlight-color: #fff;
-  --primary-color: #777;
-  --secondary-color: rgb(255, 240, 210);
-  --faded-color: #525252;
-  --bg-color: #171717;
+  --highlight-color: #eef3ec;
+  --primary-color: #bac3b8;
+  --secondary-color: rgb(250, 255, 228);
+  --faded-color: #5e635e;
+  --bg-color: #141414;
 }
 
 * {
@@ -46,6 +46,9 @@ body {
 }
 body {
   background-color: var(--bg-color);
+}
+.staatliches {
+  font-family: "Staatliches", "Open Sauce", "Albert Sans", "Poppins", sans-serif;
 }
 .header-text {
   font-family: "Open Sauce", "Albert Sans", "Poppins", sans-serif;
@@ -119,7 +122,7 @@ body {
   display: block;
   aspect-ratio: 1 / 1;
   margin-inline: auto;
-  filter: brightness(0.6);
+  filter: brightness(0.6) sepia(0.15) hue-rotate(15deg);
   transition: all 0.2s ease-in-out;
 }
 .hero-image:hover img {
