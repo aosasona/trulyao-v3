@@ -26,16 +26,16 @@ const NavMenu: FC<Props> = ({ isVisible, toggleVisibility }) => {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.4,
-        ease: [0.2, 0.05, -0.01, 0.7],
+        duration: 0.3,
+        ease: "easeInOut",
       },
     },
     closed: {
       opacity: 0,
       x: -200,
       transition: {
-        duration: 0.4,
-        ease: [0.2, 0.05, -0.01, 0.7],
+        duration: 0.3,
+        ease: "easeInOut",
       },
     },
   };
