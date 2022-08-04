@@ -10,7 +10,7 @@ const HeroHeader: FC<Props> = ({ children }) => {
       {[...children].map((word, index) => (
         <span
           key={index}
-          className="text-[15vw] lg:text-[6.75vw] font-bold hover:text-white transition-all"
+          className="text-[14vw] lg:text-[6.75vw] font-bold hover:text-white transition-all"
         >
           {word}
         </span>

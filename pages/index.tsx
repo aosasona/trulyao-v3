@@ -7,7 +7,7 @@ import type { NextPage } from "next";
 const Home: NextPage = () => {
   return (
     <Layout title="Ayodeji" description="Software Developer">
-      <main className="mt-[11vh] lg:mt-0 lg:h-screen lg:flex lg:items-center lg:justify-center w-[95vw] lg:w-5/6 mx-auto px-3">
+      <main className="mt-[12vh] lg:mt-0 lg:h-screen lg:flex lg:items-center lg:justify-center w-[95vw] lg:w-5/6 mx-auto px-3 max-w-[100vw]">
         <section className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-8">
           <div className="flex flex-col gap-y-4 lg:gap-y-6">
             <div className="w-full px-1 max-w-full">
