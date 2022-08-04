@@ -2,6 +2,7 @@ import type { FC, ReactNode } from "react";
 import Meta from "@defaults/Meta";
 import Nav from "@components/Nav";
 import { firstLetterUpperCase } from "@utils/capital.util";
+import Footer from "@components/Footer";
 
 interface Props {
   title: string;
@@ -17,6 +18,7 @@ const Layout: FC<Props> = ({ title, description, children }) => {
       <Meta title={title} desc={description} />
       <Nav title={NavTitle} />
       <div>{children}</div>
+      <Footer />
     </>
   );
 };

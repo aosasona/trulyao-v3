@@ -48,7 +48,7 @@ const NavMenu: FC<Props> = ({ isVisible, toggleVisibility }) => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: "100vw" }}
           transition={{ duration: 0.4, ease: "easeInOut", delay: 0.1 }}
-          className="fixed w-screen h-screen top-0 left-0 bg-neutral-900 bg-opacity-80 backdrop-blur-sm z-[99999] lg:hidden"
+          className="fixed w-screen h-screen top-0 left-0 bg-neutral-900 bg-opacity-95 backdrop-blur-sm z-[99999] lg:hidden"
         >
           <button
             name="close-modal"
@@ -61,7 +61,8 @@ const NavMenu: FC<Props> = ({ isVisible, toggleVisibility }) => {
             initial="closed"
             animate="open"
             exit="closed"
-            className="max-h-[50vh] flex flex-col gap-y-6 overflow-y-auto mt-6"
+            className="max-h-[55vh] flex flex-col gap-y-6 overflow-y-auto mt-6"
+            onClick={toggleVisibility}
           >
             <NavLink url="/" variants={itemVariant}>
               Home
@@ -69,7 +70,10 @@ const NavMenu: FC<Props> = ({ isVisible, toggleVisibility }) => {
             <NavLink url="/#about" variants={itemVariant}>
               About
             </NavLink>
-            <NavLink url="/" variants={itemVariant}>
+            <NavLink url="/#skills" variants={itemVariant}>
+              Skills
+            </NavLink>
+            <NavLink url="/portfolio" variants={itemVariant}>
               Portfolio
             </NavLink>
             <NavLink url="/#other-stuff" variants={itemVariant}>

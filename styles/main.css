@@ -47,6 +47,16 @@ body {
 body {
   background-color: var(--bg-color);
 }
+.header-text {
+  font-family: "Open Sauce", "Albert Sans", "Poppins", sans-serif;
+  font-weight: 900;
+}
+.header-line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  margin: 1rem 0;
+}
 .header-link {
   width: max-content;
   font-size: 0.9rem;
@@ -66,7 +76,7 @@ body {
   font-size: 0.65rem;
   top: 100%;
   margin: 0 auto;
-  opacity: 0.4;
+  opacity: 0.6;
   width: max-content;
   max-width: 300px;
   line-height: 1.5;
