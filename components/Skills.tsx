@@ -24,10 +24,7 @@ const Skills = () => {
           <SkillsRating name="Python + Flask" level={5} />
           <SkillsRating name="Golang" level={3} learning={true} />
           <SkillsRating name="Express.js, Fastify & Nest.js" level={8} />
-          <SkillsRating
-            name="React.js & Next.js + Tailwind CSS & Chakra UI"
-            level={8}
-          />
+          <SkillsRating name="React.js & Next.js + Tailwind CSS" level={8} />
           <SkillsRating name="MySQL + PostgreSQL" level={8} />
           <SkillsRating name="Git & Github" level={7} />
         </div>

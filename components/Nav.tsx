@@ -1,7 +1,6 @@
 import { FC, useState } from "react";
 import Link from "next/link";
 import { BiMenuAltRight } from "react-icons/bi";
-import { AnimateSharedLayout } from "framer-motion";
 import NavMenu from "./NavMenu";
 
 interface Props {
