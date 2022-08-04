@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="flex flex-col gap-y-4 lg:gap-y-6">
           <div className="w-full px-1 max-w-full">
             <HeroHeader>Software</HeroHeader>
-            <HeroHeader>Developer.</HeroHeader>
+            <HeroHeader>Developer</HeroHeader>
           </div>
           <div className="w-full hero-quote px-1">
             <p className="text-faded my-6 lg:my-8">
