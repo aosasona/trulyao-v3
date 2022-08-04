@@ -1,5 +1,4 @@
 import React from "react";
-import { BsGithub, BsLink45Deg } from "react-icons/bs";
 import ProjectCard from "./ProjectCard";
 import SectionHeader from "./SectionHeader";
 import TextHighlight from "./TextHighlight";
@@ -11,7 +10,8 @@ const OtherStuff = () => {
         <SectionHeader title="Other Stuff" />
         <p className="text-faded leading-relaxed text-sm">
           The following is a list of the personal projects and products that I
-          have worked on or to which I have contributed in some other capacity.
+          have worked on or to which I have{" "}
+          <TextHighlight>contributed</TextHighlight> in some other capacity.
         </p>
 
         <section className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-5 mt-6">

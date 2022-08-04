@@ -18,7 +18,7 @@ const Skills = () => {
           technologies that I have worked with in the past as well as those that
           I am currently working with.
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-5 mt-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-5 my-5">
           <SkillsRating name="PHP + Laravel" level={8} />
           <SkillsRating name="JavaScript + Typescript (Node.js)" level={8} />
           <SkillsRating name="Python + Flask" level={5} />
@@ -29,7 +29,7 @@ const Skills = () => {
           <SkillsRating name="Git & Github" level={7} />
         </div>
 
-        <p className="text-faded leading-relaxed text-sm mt-4">
+        <p className="text-faded leading-relaxed text-sm">
           I am not very good at assigning ratings, but this is the best I can do
           to give you a sense of what anything is like. This list might go on
           forever, so I have only listed the most{" "}

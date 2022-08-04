@@ -1,4 +1,5 @@
 import { FC, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 interface Props {
   name: string;
@@ -7,7 +8,7 @@ interface Props {
 }
 
 const SkillsRating: FC<Props> = ({ name, level, learning = false }) => {
-  const [showSkills, setShowSkills] = useState(false);
+  const [showSkills, setShowSkills] = useState(true);
 
   const skillsPercent = ((level / 10) * 100).toFixed(0);
 
@@ -24,14 +25,26 @@ const SkillsRating: FC<Props> = ({ name, level, learning = false }) => {
           </p>
         )}
       </div>
-      {showSkills && (
-        <div className="relative w-full h-[4px] bg-neutral-800 mt-5">
-          <div
-            className="h-full bg-faded absolute left-0 top-0 bottom-0"
-            style={{ width: `${skillsPercent}%` }}
-          />
-        </div>
-      )}
+      <AnimatePresence>
+        {showSkills && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="relative w-full h-[4px] bg-neutral-800 mt-6"
+          >
+            <motion.div
+              initial={{ opacity: 0, width: 0 }}
+              whileInView={{ opacity: 1, width: `${skillsPercent}%` }}
+              exit={{ opacity: 0, width: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="h-full bg-faded absolute left-0 top-0 bottom-0"
+              style={{ width: `${skillsPercent}%` }}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
