@@ -6,7 +6,16 @@ interface Props {
 }
 
 const NavMenuIcon: FC<Props> = ({ url, icon }) => {
-  return <a href={url}>{icon}</a>;
+  return (
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="opacity-80 hover:text-white hover:opacity-100 transition-all"
+    >
+      {icon}
+    </a>
+  );
 };
 
 export default NavMenuIcon;

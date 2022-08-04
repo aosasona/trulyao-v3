@@ -85,12 +85,21 @@ const NavMenu: FC<Props> = ({ isVisible, toggleVisibility }) => {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 100, opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut", delay: 0.4 }}
-            className="w-full flex flex-col justify-center gap-y-3"
+            className="w-full flex flex-col justify-center gap-y-4"
           >
             <div className="flex justify-evenly items-center py-4 mt-auto">
-              <NavMenuIcon url="" icon={<FaTwitter size={23} />} />
-              <NavMenuIcon url="" icon={<FaGithub size={23} />} />
-              <NavMenuIcon url="" icon={<FaLinkedin size={23} />} />
+              <NavMenuIcon
+                url="https://twitter.com/trulyao"
+                icon={<FaTwitter size={23} />}
+              />
+              <NavMenuIcon
+                url="https://github.com/aosasona"
+                icon={<FaGithub size={23} />}
+              />
+              <NavMenuIcon
+                url="https://linkedin.com/in/aosasona"
+                icon={<FaLinkedin size={23} />}
+              />
             </div>
             <p className="text-center text-[11px] opacity-60">
               Built by{" "}
@@ -98,7 +107,7 @@ const NavMenu: FC<Props> = ({ isVisible, toggleVisibility }) => {
                 href="https://twitter.com/trulyao"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="text-white hover:text-neutral-400"
+                className="text-white hover:text-neutral-400 hover:underline hover:underline-offset-2 transition-all"
               >
                 Ayodeji
               </a>

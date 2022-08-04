@@ -1,4 +1,3 @@
-import Dummy from "@components/Dummy";
 import Layout from "@defaults/Layout";
 import Meta from "@defaults/Meta";
 import type { NextPage } from "next";
