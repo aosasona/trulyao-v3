@@ -13,16 +13,17 @@
 
 @font-face {
   font-family: "Open Sauce";
-  src: url("../fonts/opensauce-regular.woff2") format("woff2"),
-    url("../fonts/opensauce-regular.woff2") format("woff");
+  src: url("/fonts/opensauce-regular.woff2") format("woff2"),
+    url("/fonts/opensauce-regular.woff2") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 :root {
-  --primary-color: #666666;
-  --secondary-color: #eee;
-  --bg-color: #000;
+  --highlight-color: #fff;
+  --primary-color: #777;
+  --secondary-color: rgb(255, 240, 210);
+  --bg-color: #171717;
 }
 
 * {
@@ -33,14 +34,66 @@
   letter-spacing: 0.04em;
   font-display: swap;
   /* border: 1px solid red !important; */
-}
-
-html {
-  font-size: 0.65vw;
+  cursor: url("/assets/cursor.svg"), url("/assets/cursor.jpg"),
+    url("/assets/cursor.png"), auto;
 }
 
 html,
 body {
   color: var(--primary-color);
   font-family: "Open Sauce", "Albert Sans", "Poppins", sans-serif;
+}
+body {
+  background-color: var(--bg-color);
+}
+.header-link {
+  width: max-content;
+  font-size: 0.9rem;
+  display: block;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  padding: 0.5rem 1rem;
+}
+.header-link:hover {
+  color: var(--highlight-color);
+  transform: translateY(-0.5rem) rotate(6deg);
+}
+.header-link:hover:before {
+  content: attr(data-description);
+  position: absolute;
+  font-size: 0.65rem;
+  top: 100%;
+  margin: 0 auto;
+  opacity: 0.4;
+  width: max-content;
+  max-width: 300px;
+  line-height: 1.5;
+  background-color: #2a2a2a;
+  padding: 0.7rem 1rem;
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.nav-link-container {
+  display: flex;
+  align-items: center;
+  transition: all 0.15s ease-in-out;
+}
+.nav-line {
+  display: block;
+  width: 2rem;
+  height: 2px;
+  background-color: var(--primary-color);
+  opacity: 0.5;
+  margin: 0 1rem;
+  transition: all 0.15s ease-in-out;
+}
+.nav-link-container:hover .nav-line {
+  background-color: var(--highlight-color);
+  opacity: 1;
+  width: 5rem;
+}
+.nav-link-container:hover h1 {
+  color: var(--highlight-color);
+  opacity: 1;
 }
