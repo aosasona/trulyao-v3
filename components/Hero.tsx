@@ -92,7 +92,7 @@ const Hero = () => {
             </div>
           </div>
           <a
-            href="mailto:osasonaayodeji1@gmail.com"
+            href="mailto:techacumenyt@gmail.com"
             className="hero-cta flex items-center justify-center lg:justify-start text-center text-sm lg:mb-0"
           >
             <span>Say Hi</span>
