@@ -17,7 +17,7 @@ const NextArticle: FC<Props> = ({ recommendation }) => {
       >
         <div className="flex items-center text-[10px]">
           <p>NEXT</p>
-          <HiOutlineArrowNarrowRight size={17} />
+          <HiOutlineArrowNarrowRight size={16} />
         </div>
         <h3 className="text-faded text-lg font-normal">
           {recommendation?.title}
