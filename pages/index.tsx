@@ -27,7 +27,7 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <Layout title="Ayodeji" description="Software Developer">
+    <Layout title="Ayodeji" description="Software Developer - Not a portfolio!">
       <main
         className="mt-[13vh] lg:mt-0 w-[95vw] lg:w-5/6 mx-auto px-3 max-w-[100vw]"
         ref={scrollRef}
