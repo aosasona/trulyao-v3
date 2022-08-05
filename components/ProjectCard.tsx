@@ -10,7 +10,7 @@ interface Props {
 
 const ProjectCard: FC<Props> = ({ name, description, github, website }) => {
   return (
-    <div className="w-full flex flex-col gap-4 bg-neutral-800 bg-opacity-40 rounded-sm drop-shadow-xl select-none aspect-video px-5 py-6 lg:px-7 lg:py-6 transition-all">
+    <div className="w-full flex flex-col gap-4 bg-alt-dark rounded-sm drop-shadow-xl select-none aspect-video px-5 py-6 lg:px-7 lg:py-6 transition-all">
       <h3 className="text-3xl text-primary">{name}</h3>
       <p className="text-xs lg:text-sm text-faded">{description}</p>
 

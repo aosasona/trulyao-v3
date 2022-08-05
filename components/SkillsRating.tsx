@@ -14,7 +14,7 @@ const SkillsRating: FC<Props> = ({ name, level, learning = false }) => {
 
   return (
     <div
-      className="bg-neutral-800 bg-opacity-40 px-4 lg:px-6 py-6 lg:py-6 rounded-sm drop-shadow-lg select-none"
+      className="bg-alt-dark px-4 lg:px-6 py-6 lg:py-6 rounded-sm drop-shadow-lg select-none"
       onDoubleClick={() => setShowSkills(!showSkills)}
     >
       <div className="h-auto flex justify-between items-center">

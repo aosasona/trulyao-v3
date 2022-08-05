@@ -1,32 +1,7 @@
-import axios from "axios";
-import type { AxiosInstance } from "axios";
-import { API_URL } from "../config/api.config";
+import { GraphQLClient } from "graphql-request";
 
-///// AUTH /////
-const auth = (token: string) => {
-  const instance: AxiosInstance = axios.create({
-    baseURL: API_URL,
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-      Authorization: `Bearer ${token}`,
-    },
-  });
-  return instance;
-};
+const graphcms = new GraphQLClient(
+  process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT || ""
+);
 
-///// AUTH /////
-const noauth = () => {
-  const instance: AxiosInstance = axios.create({
-    baseURL: API_URL,
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-    },
-  });
-  return instance;
-};
-
-const request = { auth, noauth };
-
-export default request;
+export default graphcms;
