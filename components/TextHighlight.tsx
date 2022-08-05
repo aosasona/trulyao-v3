@@ -5,7 +5,7 @@ interface Props {
 }
 
 const TextHighlight: FC<Props> = ({ children }) => {
-  return <span className="text-neutral-400">{children}</span>;
+  return <span className="text-primary opacity-90">{children}</span>;
 };
 
 export default TextHighlight;
