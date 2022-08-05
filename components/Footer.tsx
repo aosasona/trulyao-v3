@@ -4,7 +4,7 @@ import NavMenuIcon from "./NavMenuIcon";
 
 const Footer = () => {
   return (
-    <footer className="w-full flex flex-col lg:flex-row lg:items-center justify-center lg:justify-around gap-y-6 my-[7vh]">
+    <footer className="w-full flex flex-col lg:flex-row lg:items-center justify-center lg:justify-around gap-y-6 my-[5vh]">
       <div className="flex justify-evenly items-center lg:gap-x-10 py-4">
         <NavMenuIcon
           url="https://twitter.com/trulyao"

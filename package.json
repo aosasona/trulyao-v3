@@ -18,15 +18,16 @@
     "locomotive-scroll": "^4.1.4",
     "moment": "^2.29.4",
     "next": "12.1.6",
+    "nprogress": "^0.2.0",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-icons": "^4.4.0",
     "react-moment": "^1.1.2",
-    "reading-time": "^1.5.0",
-    "timeago.js": "^4.0.2"
+    "reading-time": "^1.5.0"
   },
   "devDependencies": {
     "@types/node": "17.0.33",
+    "@types/nprogress": "^0.2.0",
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.4",
     "autoprefixer": "^10.4.7",

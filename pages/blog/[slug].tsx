@@ -1,7 +1,7 @@
 import React from "react";
 import { NextPage, GetStaticPaths, GetStaticProps } from "next";
 import { ParsedUrlQuery } from "querystring";
-import * as timeago from "timeago.js";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import parse from "html-react-parser";
 import { gql } from "graphql-request";
 import graphcms from "@utils/request.util";
@@ -10,6 +10,7 @@ import Layout from "@defaults/Layout";
 import Back from "@components/Back";
 import { IArticle, IRecommendation } from "interfaces/article.interface";
 import ArticleMeta from "@components/ArticleMeta";
+import NextArticle from "@components/NextArticle";
 
 interface Props {
   article: IArticle;
@@ -30,9 +31,15 @@ const ArticlePage: NextPage<Props> = ({ article, recommendation }) => {
           <h1 className="text-4xl lg:text-5xl font-bold">{article?.title}</h1>
         </div>
 
-        <section className="text-[13px] text-primary text-opacity-60 font-thin leading-relaxed mt-6">
+        <section className="text-[13px] text-primary text-opacity-60 font-thin leading-[1.75] mt-6">
           {parse(article?.content?.html as string)}
         </section>
+
+        <div className="mt-6">
+          {recommendation?.title && (
+            <NextArticle recommendation={recommendation} />
+          )}
+        </div>
       </main>
     </Layout>
   );
@@ -86,20 +93,17 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
           title
           description
           slug
-          content {
-            text
-          }
           createdAt
         }
       }
     `;
   const recommendationResponse = await graphcms.request(recommendationQuery);
-  const recommendation = recommendationResponse.articles;
+  const recommendation = recommendationResponse?.articles;
 
   return {
     props: {
       article: response?.article || null,
-      recommendation: recommendation,
+      recommendation: recommendation[0] || null,
     },
     revalidate: 10,
   };
