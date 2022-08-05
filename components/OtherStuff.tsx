@@ -9,8 +9,8 @@ const OtherStuff = () => {
       <div>
         <SectionHeader title="Other Stuff" />
         <p className="text-faded leading-relaxed text-sm">
-          The following is a list of the personal projects and products that I
-          have worked on or to which I have{" "}
+          The following is a list of the <TextHighlight>personal</TextHighlight>{" "}
+          projects and products that I have worked on or to which I have{" "}
           <TextHighlight>contributed</TextHighlight> in some other capacity.
         </p>
 
