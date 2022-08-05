@@ -61,7 +61,7 @@ const NavMenu: FC<Props> = ({ isVisible, toggleVisibility }) => {
             initial="closed"
             animate="open"
             exit="closed"
-            className="max-h-[55vh] flex flex-col gap-y-6 overflow-y-auto mt-6"
+            className="max-h-[65vh] flex flex-col gap-y-6 overflow-y-auto mt-6"
             onClick={toggleVisibility}
           >
             <NavLink url="/" variants={itemVariant}>
