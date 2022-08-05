@@ -28,10 +28,10 @@ const ArticlePage: NextPage<Props> = ({ article, recommendation }) => {
         <div className="flex flex-col gap-5">
           <Back />
           <ArticleMeta article={article} />
-          <h1 className="text-4xl lg:text-5xl font-bold">{article?.title}</h1>
+          <h1 className="text-4xl lg:text-5xl font-normal">{article?.title}</h1>
         </div>
 
-        <section className="text-[13px] text-primary text-opacity-60 font-thin leading-[1.75] mt-6">
+        <section className="text-[13px] text-primary text-opacity-60 font-thin leading-[1.75] mt-6 article-body">
           {parse(article?.content?.html as string)}
         </section>
 

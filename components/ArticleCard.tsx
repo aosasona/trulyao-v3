@@ -29,7 +29,7 @@ const ArticleCard: FC<Props> = ({ article }) => {
       >
         {article?.createdAt}
       </Moment>
-      <h1 className="text-4xl lg:text-4xl font-bold">{article?.title}</h1>
+      <h1 className="text-4xl lg:text-4xl">{article?.title}</h1>
 
       <div className="flex flex-col gap-y-6 mt-auto">
         <p className="text-xs text-faded">{article?.description}</p>

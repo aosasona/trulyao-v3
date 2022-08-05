@@ -50,6 +50,16 @@ body {
 .staatliches {
   font-family: "Staatliches", "Open Sauce", "Albert Sans", "Poppins", sans-serif;
 }
+.article-body b {
+  color: var(--highlight-color);
+}
+.article-body a {
+  color: var(--highlight-color);
+  text-decoration: underline;
+}
+.article-body a:hover {
+  text-decoration: none;
+}
 .header-text {
   font-family: "Open Sauce", "Albert Sans", "Poppins", sans-serif;
   font-weight: 900;
