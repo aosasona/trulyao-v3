@@ -35,7 +35,7 @@ const Blog: NextPage<Props> = ({ articles }) => {
             </section>
           ) : (
             <div className="w-full h-[40vh] flex items-center justify-center text-faded text-sm">
-              No articles yet...
+              No articles...
             </div>
           )}
         </section>
