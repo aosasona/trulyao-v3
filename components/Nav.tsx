@@ -16,7 +16,7 @@ const Nav: FC<Props> = ({ title = "Home" }) => {
 
   return (
     <>
-      <nav className="flex fixed top-5 right-0 left-0 w-[93vw] lg:w-5/6 justify-between items-center mx-auto bg-[#232323] bg-opacity-80 backdrop-blur-md drop-shadow-md-lg rounded-sm py-5 lg:py-6 px-8 lg:px-10 z-[9999]">
+      <nav className="flex fixed top-5 right-0 left-0 w-[93vw] lg:w-5/6 justify-between items-center mx-auto bg-[#222222] bg-opacity-80 backdrop-blur-md drop-shadow-md-lg rounded-sm py-5 lg:py-6 px-8 lg:px-10 z-[9999]">
         <div>
           <Link href="/">
             <h1 className="font-extrabold text-md lg:text-2xl">Ayodeji</h1>
