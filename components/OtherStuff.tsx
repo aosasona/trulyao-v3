@@ -18,7 +18,7 @@ const OtherStuff = () => {
           <ProjectCard
             name="Frikax"
             description="The all-in-one social media for Techies - coming soon"
-            github={""}
+            github="https://www.frikax.net"
             website="https://www.frikax.net"
           />
 
@@ -39,7 +39,7 @@ const OtherStuff = () => {
           <ProjectCard
             name="Noxis"
             description="Quick, easy and anonymous conversations - POC (early version)"
-            github=""
+            github="https://noxis.chat/"
             website="https://noxis.chat/"
           />
 
