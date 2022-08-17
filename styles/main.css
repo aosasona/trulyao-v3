@@ -167,6 +167,10 @@ body {
   align-items: center;
   transition: all 0.15s ease-in-out;
 }
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none;
+}
 .nav-line {
   display: block;
   width: 2rem;
