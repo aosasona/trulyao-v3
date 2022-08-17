@@ -52,6 +52,7 @@ body {
 }
 .article-body b {
   color: var(--highlight-color);
+  white-space: pre-line;
 }
 .article-body a {
   color: var(--highlight-color);
