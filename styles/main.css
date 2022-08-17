@@ -57,9 +57,11 @@ body {
 .article-body a {
   color: var(--highlight-color);
   text-decoration: underline;
+  opacity: 0.75;
 }
 .article-body a:hover {
   text-decoration: none;
+  opacity: 1;
 }
 .header-text {
   font-family: "Open Sauce", "Albert Sans", "Poppins", sans-serif;
