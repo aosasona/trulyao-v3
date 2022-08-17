@@ -40,8 +40,8 @@ const Meta: FunctionComponent<Props> = ({ title, desc, keywords }) => {
 };
 
 Meta.defaultProps = {
-  title: "Boilerplate",
-  keywords: "ayodeji, osasona, software, developer, typescript",
+  title: "Ayodeji",
+  keywords: "ayodeji, osasona, software, developer, typescript, engineer, blog, php, mysql, python",
   desc: "Ayodeji - Software Developer",
 };
 
