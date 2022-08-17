@@ -15,7 +15,7 @@ interface Props {
 const Blog: NextPage<Props> = ({ articles }) => {
   return (
     <Layout title="Blog" description="A doorway into my mind" showFooter={true}>
-      <main className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-5 mt-[15vh] lg:mt-[15vh] w-[95vw] lg:w-5/6 mx-auto px-3 max-w-[100vw]">
+      <main className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-5 mt-[15vh] lg:mt-[14vh] w-[95vw] lg:w-5/6 mx-auto px-3 max-w-[100vw]">
         <div className="flex flex-col gap-y-4 lg:gap-y-8 lg:col-span-4">
           <Back />
           <h1 className="text-6xl lg:text-7xl">Blog</h1>
