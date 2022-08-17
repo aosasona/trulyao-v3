@@ -26,7 +26,7 @@ const Blog: NextPage<Props> = ({ articles }) => {
           </p>
         </div>
 
-        <section className="lg:col-span-8 lg:max-h-[90vh] lg:overflow-auto">
+        <section className="lg:col-span-8 lg:max-h-[88vh] lg:overflow-auto hide-scrollbar">
           {articles?.length > 0 ? (
             <section className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-5">
               {articles?.map((article: any, index: number) => (
