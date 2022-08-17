@@ -32,7 +32,7 @@ const ArticlePage: NextPage<Props> = ({ article, recommendation }) => {
         </div>
 
         <section className="text-[13px] text-primary text-opacity-60 font-thin leading-[1.75] mt-6 article-body">
-          {parse(article?.content?.html as string)}
+          {parse(article?.content?.html?.replace("<p></p>", "<br />") as string)}
         </section>
 
         <div className="mt-6">
