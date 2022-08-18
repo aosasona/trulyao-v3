@@ -63,6 +63,11 @@ body {
   text-decoration: none;
   opacity: 1;
 }
+.faded-article {
+  opacity: 0.4;
+  filter: blur(5px);
+  transition: opacity 0.3s ease-in-out;
+}
 .header-text {
   font-family: "Open Sauce", "Albert Sans", "Poppins", sans-serif;
   font-weight: 900;

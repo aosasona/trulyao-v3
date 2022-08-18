@@ -19,14 +19,14 @@ const Skills = () => {
           I am currently working with.
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-5 my-5">
-          <SkillsRating name="PHP + Laravel" level={8} />
+          <SkillsRating name="PHP" level={8} />
           <SkillsRating name="JavaScript + Typescript (Node.js)" level={8} />
           <SkillsRating name="Python + Flask" level={5} />
           <SkillsRating name="Golang" level={3} learning={true} />
           <SkillsRating name="Express.js, Fastify & Nest.js" level={8} />
           <SkillsRating name="React.js & Next.js + Tailwind CSS" level={8} />
           <SkillsRating name="MySQL + PostgreSQL" level={8} />
-          <SkillsRating name="Git & Github" level={7} />
+          <SkillsRating name="Git & Github" level={6} />
         </div>
 
         <p className="text-faded leading-relaxed text-sm">

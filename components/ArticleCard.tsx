@@ -5,6 +5,7 @@ import Moment from "react-moment";
 const readingTime = require("reading-time");
 
 interface Props {
+  index: number;
   article: {
     title: string;
     description: string;
@@ -14,14 +15,34 @@ interface Props {
       text?: string;
     };
   };
+  ActiveComponent: number | null;
+  onHover: () => void;
+  onLeave: () => void;
 }
 
-const ArticleCard: FC<Props> = ({ article }) => {
+const ArticleCard: FC<Props> = ({
+  index,
+  article,
+  ActiveComponent,
+  onHover,
+  onLeave,
+}) => {
   const router = useRouter();
+
+  const defaultClass =
+    "w-full flex flex-col gap-3 aspect-[9/11] bg-alt-dark rounded-sm drop-shadow-sm hover:bg-primary hover:text-alt-dark hover:scale-90 hover:skew-x-[1deg] px-8 py-10 lg:px-10 lg:py-10 transition-all duration-500 select-none rounded-md";
+  const activeClass =
+    ActiveComponent !== null && !(ActiveComponent === index)
+      ? "faded-article"
+      : "";
+  const className = `${defaultClass} ${activeClass}`;
+
   return (
     <div
-      className="w-full flex flex-col gap-3 aspect-[9/11] bg-alt-dark rounded-sm drop-shadow-sm hover:scale-95 px-8 py-10 lg:px-10 lg:py-10 transition-all duration-300 select-none"
+      className={className}
       onClick={() => router.push(`/blog/${article?.slug}`)}
+      onMouseEnter={onHover}
+      onMouseLeave={onLeave}
     >
       <Moment
         format="MMMM DD, YYYY"

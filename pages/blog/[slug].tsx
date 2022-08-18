@@ -89,8 +89,6 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
   const response = await graphcms.request(query);
 
-  console.log(response?.article?.id);
-
   // GET RECOMMENDATION
   const recommendationQuery = gql`
       {
