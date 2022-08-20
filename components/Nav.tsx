@@ -44,11 +44,11 @@ const Nav: FC<Props> = ({ title = "Home" }) => {
               Skills
             </div>
           </Link>
-          <Link href="/portfolio">
+          {/* <Link href="/portfolio">
             <div className="header-link" data-description="Oops, not yet 🥲">
               Portfolio
             </div>
-          </Link>
+          </Link> */}
           <Link href="/#other-stuff">
             <div
               className="header-link"
