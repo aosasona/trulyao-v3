@@ -31,9 +31,9 @@ const OtherStuff = () => {
 
           <ProjectCard
             name="PHPRouter"
-            description="A PHP composer package that brings Express-like routing to 'vanilla' PHP (No frameworks)"
+            description="A PHP composer package that brings Express-like routing to 'vanilla' PHP without any framework"
             github="https://github.com/aosasona/php-router"
-            website="https://phprouter.herokuapp.com/"
+            website="http://phprouter.xyz"
           />
 
           <ProjectCard
