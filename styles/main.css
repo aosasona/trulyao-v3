@@ -64,8 +64,8 @@ body {
   opacity: 1;
 }
 .faded-article {
-  opacity: 0.4;
-  filter: blur(5px);
+  opacity: 0.25;
+  filter: blur(6px) !important;
   transition: opacity 0.3s ease-in-out;
 }
 .header-text {
