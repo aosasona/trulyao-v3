@@ -73,9 +73,9 @@ const NavMenu: FC<Props> = ({ isVisible, toggleVisibility }) => {
             <NavLink url="/#skills" variants={itemVariant}>
               Skills
             </NavLink>
-            <NavLink url="/portfolio" variants={itemVariant}>
+            {/* <NavLink url="/portfolio" variants={itemVariant}>
               Portfolio
-            </NavLink>
+            </NavLink> */}
             <NavLink url="/#other-stuff" variants={itemVariant}>
               Other Stuff
             </NavLink>
