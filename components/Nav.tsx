@@ -70,7 +70,7 @@ const Nav: FC<Props> = ({ title = "Home" }) => {
         <div className="lg:hidden">
           <button
             onClick={handleMenuClick}
-            className={`${isMenuOpen ? "rotate-[90deg]" : ""}`}
+            className={`${isMenuOpen ? "rotate-[15deg]" : ""}`}
           >
             <BiMenuAltRight size={24} />
           </button>

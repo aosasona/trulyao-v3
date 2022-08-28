@@ -15,11 +15,18 @@ const OtherStuff = () => {
         </p>
 
         <section className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-5 mt-6">
-          <ProjectCard
+          {/* <ProjectCard
             name="Frikax"
             description="The all-in-one social media for Techies - coming soon"
             github="https://www.frikax.net"
             website="https://www.frikax.net"
+          /> */}
+
+          <ProjectCard
+            name="Noxis"
+            description="Quick, easy and anonymous conversations - POC (early version)"
+            github="https://noxis.chat/"
+            website="https://noxis.chat/"
           />
 
           <ProjectCard
@@ -37,10 +44,10 @@ const OtherStuff = () => {
           />
 
           <ProjectCard
-            name="Noxis"
-            description="Quick, easy and anonymous conversations - POC (early version)"
-            github="https://noxis.chat/"
-            website="https://noxis.chat/"
+            name="RandGen"
+            description="A web demo of a random number generator using the PHPRouter package"
+            github="https://github.com/aosasona/randgen"
+            website="https://php-randgen.herokuapp.com/"
           />
 
           <ProjectCard
