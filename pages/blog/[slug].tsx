@@ -24,7 +24,7 @@ const ArticlePage: NextPage<Props> = ({ article, recommendation }) => {
       description={article?.description}
       showFooter={true}
     >
-      <main className="mt-[15vh] lg:mt-[15vh] 2xl:mt-[13vh] w-[95vw] lg:w-5/6 2xl:w-3/6 mx-auto px-3 max-w-[100vw]">
+      <main className="mt-[15vh] lg:mt-[15vh] 2xl:mt-[13vh] w-[95vw] lg:w-5/6 2xl:w-3/6 mx-auto px-3 max-w-[100vw] overflow-y-scroll">
         <div className="flex flex-col gap-5">
           <Back />
           <ArticleMeta article={article} />
