@@ -8,7 +8,7 @@ interface Props {
 }
 
 const SkillsRating: FC<Props> = ({ name, level, learning = false }) => {
-  const [showSkills, setShowSkills] = useState(true);
+  const [showSkills, setShowSkills] = useState(false);
 
   const skillsPercent = ((level / 10) * 100).toFixed(0);
 

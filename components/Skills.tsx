@@ -22,7 +22,7 @@ const Skills = () => {
           <SkillsRating name="PHP" level={8} />
           <SkillsRating name="JavaScript + Typescript (Node.js)" level={8} />
           <SkillsRating name="Python + Flask" level={5} />
-          <SkillsRating name="Golang" level={3} learning={true} />
+          <SkillsRating name="Golang" level={2} learning={true} />
           <SkillsRating name="Express.js, Fastify & Nest.js" level={8} />
           <SkillsRating name="React.js & Next.js + Tailwind CSS" level={8} />
           <SkillsRating name="MySQL + PostgreSQL" level={8} />

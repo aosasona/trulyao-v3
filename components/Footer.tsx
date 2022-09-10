@@ -6,21 +6,11 @@ const Footer = () => {
   return (
     <footer className="w-full flex flex-col lg:flex-row lg:items-center justify-center lg:justify-around gap-y-6 my-[5vh]">
       <div className="flex justify-evenly items-center lg:gap-x-10 py-4">
-        <NavMenuIcon
-          url="https://twitter.com/trulyao"
-          icon={<FaTwitter size={23} />}
-        />
-        <NavMenuIcon
-          url="https://github.com/aosasona"
-          icon={<FaGithub size={23} />}
-        />
-        <NavMenuIcon
-          url="https://linkedin.com/in/aosasona"
-          icon={<FaLinkedin size={23} />}
-        />
+        <NavMenuIcon url="https://twitter.com/trulyao" icon={<FaTwitter size={23} />} />
+        <NavMenuIcon url="https://github.com/aosasona" icon={<FaGithub size={23} />} />
       </div>
       <p className="text-center text-[11px] opacity-60">
-        Built by{" "}
+        Designed & built by{" "}
         <a
           href="https://twitter.com/trulyao"
           target="_blank"

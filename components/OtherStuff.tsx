@@ -21,12 +21,11 @@ const OtherStuff = () => {
             github="https://www.frikax.net"
             website="https://www.frikax.net"
           /> */}
-
           <ProjectCard
-            name="Noxis"
-            description="Quick, easy and anonymous conversations - POC (early version)"
-            github="https://noxis.chat/"
-            website="https://noxis.chat/"
+            name=" DocuSort - WIP"
+            description="Save, sort and share your documents in one place"
+            github="#"
+            website="https://www.docusort.app"
           />
 
           <ProjectCard
@@ -38,16 +37,9 @@ const OtherStuff = () => {
 
           <ProjectCard
             name="PHPRouter"
-            description="A PHP composer package that brings Express-like routing to 'vanilla' PHP without any framework"
+            description="A PHP composer package that brings Express-like routing to 'vanilla' PHP"
             github="https://github.com/aosasona/php-router"
-            website="http://phprouter.xyz"
-          />
-
-          <ProjectCard
-            name="RandGen"
-            description="A web demo of a random number generator using the PHPRouter package"
-            github="https://github.com/aosasona/randgen"
-            website="https://php-randgen.herokuapp.com/"
+            website="https://php-router-demo.onrender.com"
           />
 
           <ProjectCard
@@ -55,13 +47,6 @@ const OtherStuff = () => {
             description="Run multiple terminal commands with one hit; anytime, anywhere!"
             github="https://github.com/hitlist-cli/cli"
             website="https://www.hitlist.dev"
-          />
-
-          <ProjectCard
-            name="Scrawny"
-            description="Lightweight request logger for Node.js - WIP"
-            github="https://github.com/aosasona/Scrawny"
-            website="https://github.com/aosasona/Scrawny"
           />
         </section>
       </div>
